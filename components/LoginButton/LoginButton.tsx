@@ -1,17 +1,25 @@
-'use client'
+"use client";
 
-import { useAccount, useDisconnect } from 'wagmi'
-import useConnectWallet from '@/hooks/useConnectWallet'
-import Button from '@/components/Button'
+import { useAccount, useDisconnect } from "wagmi";
+import useConnectWallet from "@/hooks/useConnectWallet";
+import Button from "@/components/Button";
 
 export default function LoginButton() {
-  const { status } = useAccount()
-  const { connectWallet } = useConnectWallet()
-  const { disconnect } = useDisconnect()
+  const { status } = useAccount();
+  const { connectWallet } = useConnectWallet();
+  const { disconnect } = useDisconnect();
 
-  if (['connecting', 'reconnecting'].includes(status)) return <Button disabled>Loading...</Button>
+  if (["connecting", "reconnecting"].includes(status))
+    return <Button disabled>Loading...</Button>;
 
-  if (status === 'connected') return <Button onClick={disconnect}>Disconnect</Button>
+  const isConnected = status === "connected";
 
-  return <Button onClick={connectWallet}>Connect</Button>
+  return (
+    <Button
+      onClick={isConnected ? disconnect : connectWallet}
+      className="bg-green text-black hover:text-black hover:bg-green font-bold py-2 px-4"
+    >
+      {isConnected ? "Disconnect" : "Connect"}
+    </Button>
+  );
 }

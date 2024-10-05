@@ -17,6 +17,12 @@ module.exports = {
         background: {
           DEFAULT: "#1F1F1F",
         },
+        green: {
+          DEFAULT: "#D0FF1A",
+        },
+        text: {
+          DEFAULT: "#E7E7E780",
+        },
       },
       fontFamily: {
         nounish: ["LondrinaSolid-Regular", "sans-serif"],
