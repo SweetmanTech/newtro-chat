@@ -7,7 +7,7 @@ const promptTwo = "What's my Zora score???";
 const Suggestions = () => (
   <div className="flex flex-col items-center space-y-4">
     <div className="rounded-full overflow-hidden">
-      <Image src="/myco-logo.png" alt="Mushroom logo" width={80} height={80} />
+      <Image src="/logo.png" alt="Mushroom logo" width={80} height={80} />
     </div>
     <div className="flex items-start space-x-4">
       <SuggestionButton suggestion={promptOne} />

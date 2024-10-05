@@ -34,3 +34,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Resources
+
+- [Figma Design](https://www.figma.com/design/1NuICHat8c8WxEj33U3bLw/Newtro---Ed-App?node-id=13-335&m=dev&t=U3nshjHNcE7Txq0e-1) - View the Newtro LearnHub App design in Figma.
