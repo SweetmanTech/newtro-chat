@@ -2,31 +2,31 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  darkMode: ['class'],
+  darkMode: ["class"],
   content: [
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
         grey: {
-          DEFAULT: '#949494',
-          light: '#f6f6f6',
+          DEFAULT: "#949494",
+          light: "#f6f6f6",
         },
         background: {
-          DEFAULT: '#F2E8CC',
+          DEFAULT: "#1F1F1F",
         },
       },
       fontFamily: {
-        nounish: ['LondrinaSolid-Regular', 'sans-serif'],
+        nounish: ["LondrinaSolid-Regular", "sans-serif"],
       },
     },
   },
   variants: {
     extend: {
-      display: ['dark'],
+      display: ["dark"],
     },
   },
   plugins: [],
-}
+};
